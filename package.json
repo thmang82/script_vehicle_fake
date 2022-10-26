@@ -1,0 +1,18 @@
+{
+    "name": "script-vehicle-fake",
+    "version": "0.1.0",
+    "description": "define at src/spec.ts",
+    "main": "src/script.ts",
+    "config": {
+        "tools": "../toolchain/tools",
+         "cli": "../toolchain/tools/script_cli.js"
+    },
+    "scripts": {
+        "cli":              "node ${npm_package_config_cli}",
+        "build":            "node ${npm_package_config_cli} build    || true",
+        "build:onserver":   "node ${npm_package_config_cli} build -s || true",
+        "install":          "node ${npm_package_config_cli} install   || true",
+        "toolchain:update": "node ${npm_package_config_tools}/toolchain_update.js",
+        "update":           "npm run toolchain:update"
+    }
+}
