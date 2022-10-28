@@ -19,6 +19,10 @@ export const specification: DataSource.Specification = {
         /* See spec in toolchain/types/spec/spec_parameter.ts for help */
         /* You can also use auto complete, or check the examples */
     ],
+    geo_relevance: {
+        countries: ["DE", "FR", "GB"],
+        cities: []
+    },
     notifications: [],
     data_fetch: {
         // Note: setting data_fetch to undefined will disable automatic fetching! You have to take care for yourself then, e.g. by subscribing to visiblity changes via ctx.script.visSubscribe
