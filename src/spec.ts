@@ -20,6 +20,7 @@ export const specification: DataSource.Specification = {
         /* You can also use auto complete, or check the examples */
     ],
     geo_relevance: {
+        everywhere: false,
         countries: ["DE", "FR", "GB"],
         cities: []
     },
